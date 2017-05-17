@@ -20,6 +20,7 @@ install:
   - npm install -g @angular/cli
   - pwd
   - npm install --prefix ./angular-src
+  - npm install
   - pwd
   - ng build
 
