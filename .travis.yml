@@ -7,7 +7,10 @@ branches:
     - master
 
 env:
-  - HOME="/home/travis/build/abhioshar/travistest/angular-src"
+  global:
+    - HOME=`pwd`/angular-src
+    - NODE_ENV=travisci
+    - BUILD_DIR=`pwd`/angular-src
 
 before_script:
   - "export DISPLAY=:99.0"
