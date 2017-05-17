@@ -1,0 +1,42 @@
+swagger: "2.0"
+info:
+  title: MeanApp
+  description: A MEAN app.
+  version: 1.0.0
+
+host: localhost:3000
+basePath: /
+schemes:
+  - http
+paths:
+  /users/profile:
+    get:
+      summary: Returns the profile of the authenticated user.
+      description: Returns the username, email of the user.
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+  /users/register:
+    post:
+      summary: Add user
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+      parameters:
+        - name: body
+          in: body
+          description:  name
+          schema:
+            type: string
+            example:
+              name: abhi shar
+              email: a@b.com
+              username: abhi
+              password: 123
+          
