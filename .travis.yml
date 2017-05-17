@@ -13,5 +13,8 @@ before_script:
   - cd angular-src
   - npm install
 
+before_install:
+  - cd angular-src
+
 script:
   - ng test --watch=false
