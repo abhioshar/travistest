@@ -6,12 +6,6 @@ branches:
   only:
     - master
 
-env:
-  global:
-    - HOME=`pwd`/angular-src
-    - NODE_ENV=travisci
-    - BUILD_DIR=`pwd`/angular-src
-
 before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
@@ -25,10 +19,11 @@ install:
   - pwd
   - npm install -g @angular/cli
   - pwd
-  - npm install
+  - npm install --prefix ./angular-src
   - pwd
+  - ng build
 
 script:
   - pwd
   - ls
-  - npm test
+  - karma start angular-src/karma.conf.js
