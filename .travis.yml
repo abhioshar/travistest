@@ -11,11 +11,16 @@ before_script:
   - "sh -e /etc/init.d/xvfb start"
 
 before_install:
+  - pwd
   - cd angular-src
+  - pwd
 
 install:
+  - pwd
   - npm install -g @angular/cli
+  - pwd
   - npm install
+  - pwd
 
 script:
   - pwd
