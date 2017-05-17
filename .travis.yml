@@ -16,4 +16,6 @@ before_install:
   - cd $TRAVIS_BUILD_DIR/angular-src
 
 script:
+  - pwd
+  - ls
   - npm test
