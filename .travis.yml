@@ -11,10 +11,10 @@ before_script:
   - npm install
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
-  - cd angular-src
 
 before_install:
-  - cd angular-src
+  - cd $TRAVIS_BUILD_DIR/angular-src
 
 script:
+  - cd $TRAVIS_BUILD_DIR/angular-src
   - ng test --watch=false
