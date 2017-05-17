@@ -43,7 +43,7 @@
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.8",
     "js-yaml": "^3.8.3",
-    "@angular/compiler-cli": "^2.3.1",
+    "@angular/compiler-cli": "^4.1.2",
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.42",
     "angular-cli": "1.0.0-beta.28.3",
