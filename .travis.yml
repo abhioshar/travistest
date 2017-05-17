@@ -10,8 +10,6 @@ before_script:
   - npm install -g @angular/cli
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
-  - cd angular-src
-  - npm install
 
 before_install:
   - cd angular-src
