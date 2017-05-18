@@ -13,4 +13,4 @@ dependencies:
  
 test:
   override:
-    - pwd && ls && ./node_modules/karma/bin/karma start karma.conf.js && pwd && ls
+    - pwd && ls && ng test --watch=false && pwd && ls
