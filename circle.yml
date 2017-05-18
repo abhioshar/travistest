@@ -7,12 +7,9 @@ machine:
 
 dependencies:
   override:
-    - npm install -g @angular/cli@latest:
-      pwd:  angular-src
-    - npm install:
-      pwd: angular-src
+    - pwd && ls && npm install -g @angular/cli@latest && pwd && ls
+    - pwd && ls && npm install && pwd && ls
  
 test:
   override:
-    - ng test:
-      pwd: angular-src
+    - pwd && ls && ng test && pwd && ls
