@@ -3,7 +3,7 @@ general:
 
 machine:
    node:
-     version: 7
+     version: 6
 
 dependencies:
   override:
