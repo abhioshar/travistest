@@ -6,7 +6,8 @@
   "scripts": {
     "test": "cd angular-src && ng test --watch=false",
     "start": "node app",
-    "ng": "ng"
+    "ng": "ng",
+    "postinstall": "cd angular-src && npm install && ng build --aot -prod && cd .."
   },
   "dependencies": {
     "@angular/common": "^2.3.1",
