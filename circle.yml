@@ -4,8 +4,12 @@ machine:
  
 dependencies:
   override:
-    - cd angular-src && npm install -g @angular/cli && npm install
+    - npm install -g @angular/cli:
+      pwd:  angular-src
+    - npm install:
+      pwd: angular-src
  
 test:
   override:
-    - cd angular-src && ng test
+    - ng test:
+      pwd: angular-src
