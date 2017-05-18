@@ -11,4 +11,4 @@ dependencies:
  
 test:
   override:
-    - pwd && ls && ng test --watch=false && pwd && ls
+    - pwd && ls && node_modules/.bin/ng test --watch=false && pwd && ls
