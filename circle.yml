@@ -1,7 +1,10 @@
+general:
+  build_dir: angular-src
+
 machine:
    node:
      version: 7
- 
+
 dependencies:
   override:
     - npm install -g @angular/cli@latest:
