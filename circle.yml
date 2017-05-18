@@ -4,7 +4,7 @@ machine:
  
 dependencies:
   override:
-    - npm install -g @angular/cli:
+    - npm install -g @angular/cli@latest:
       pwd:  angular-src
     - npm install:
       pwd: angular-src
