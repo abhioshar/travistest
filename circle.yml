@@ -2,10 +2,10 @@ machine:
    node:
      version: 7
  
- dependencies:
-   override:
-     - cd angular-src; npm install -g @angular/cli; npm install
+dependencies:
+  override:
+    - cd angular-src; npm install -g @angular/cli; npm install
  
- test:
-   override:
-     - ng test
+test:
+  override:
+    - ng test
