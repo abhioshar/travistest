@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="col-md-8">
+        <div class="game-side">
+            <md-grid-list class="game-grid" cols="3">
+                <md-grid-tile *ngFor="let cell of gameService.cells; let i = index;" (click)="playerClick(i)"><i [class]="cell.symbol == 'donut_large' ? 'material-icons donut_large' : 'material-icons cross'">{{ cell.symbol }}</i></md-grid-tile>
+                </md-grid-list>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <h4>Score</h4>
+    </div>
+</div>
